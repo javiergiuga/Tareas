@@ -25,8 +25,8 @@ select i in "${cal[@]}"
 			"InstalarENGIX")
 				sudo apt install nginx -y
 				cd /etc/nginx/sites-available/
-				sudo truncate -s0 default.conf
-				touch default.conf
+				sudo truncate -s0 default
+				touch default
 				sudo systemctl restart nginx
 				;;
 			"InstalarSSH")
